@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: ease 0.5s;
+}
+
+.container{
+  width: 90%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-colors{
+  text-align: center;
+}
+
+.hex-colors h1{
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  animation: change-color 4s infinite alternate;
+}
+
+.hex-colors h2{
+  font-size: 1.5rem;
+  margin-top: 10%;
+}
+
+button{
+  color: white;
+  background-color: rgb(71, 71, 255);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: ease 0.5s;
+  border: none;
+  border-radius: 8px;
+}
+
+button:hover{
+  background-color: rgb(85, 85, 255);
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes change-color {
+  0%   {color: red;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: green;}
+}
