@@ -6,10 +6,15 @@ var quotes = {
   "― Eleanor Roosevelt" : '“The future belongs to those who believe in the beauty of their dreams.”'
 }
 
+// Generates a random quote from the quotes object and updates the HTML content
 function generate(){
+  // Get all authors (keys) from the quotes object
   var authors = Object.keys(quotes);
+
+  // Generate a random index
   var index = Math.floor(Math.random() * authors.length);
 
+  // Select a random author and their quote
   var author = authors[index];
   var quote = quotes[author];
 
