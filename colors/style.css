@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+}
+
+.container{
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: rgb(80, 97, 255);
+  padding: 10px 20px;
+  transition: ease 0.5s;
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: rgb(97, 112, 255);
+}
