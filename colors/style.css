@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  transition: ease 0.5s;
 }
 
 .container{
