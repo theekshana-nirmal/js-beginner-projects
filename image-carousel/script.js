@@ -3,8 +3,13 @@ var index = 0;
 function changeImage(i){
   index += i;
 
+  let images = document.getElementsByClassName("image");
   let dots = document.getElementsByClassName("dot");
   console.log(dots);
+
+  for(i = 0; i < images.length; i++){
+    images[i].style.display = "none";
+  }
 
   for(i = 0; i < dots.length; i++){
     dots[i].className = dots[i].className.replace(" active", "");
@@ -19,6 +24,8 @@ function changeImage(i){
   }
 
   dots[index].className += " active";
+  images[index].style.display = "block";
+
 }
 
 changeImage(0);
