@@ -22,8 +22,8 @@
     <div class="image"><img src="imgs/Lam6.jpg" width="100%"></div>
     <div class="image"><img src="imgs/Lam7.jpg" width="100%"></div>
   </div>
-  <i class="fa-solid fa-chevron-left"></i>
-  <i class="fa-solid fa-chevron-right"></i>
+  <i class="fa-solid fa-chevron-left" onclick="changeImage(-1)" id="prev"></i>
+  <i class="fa-solid fa-chevron-right" onclick="changeImage(1)" id="next"></i>
 
   <div class="dots">
     <div class="dot"></div>
@@ -35,9 +35,6 @@
     <div class="dot"></div>
     <div class="dot"></div>
   </div>
-
-  <button onclick="changeImage(-1)" id="prev">Previous</button>
-  <button onclick="changeImage(1)" id="next">Next</button>
 
   <script src="script.js"></script>
 </body>
