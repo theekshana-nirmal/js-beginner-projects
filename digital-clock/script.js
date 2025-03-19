@@ -1,5 +1,7 @@
+//Call the showTime function when the window is loaded
 window.addEventListener("load", showTime);
 
+/* JavaScript code for the digital clock */
 function showTime() {
   var date = new Date();
   var dayNumber = date.getDay();
@@ -17,5 +19,6 @@ function showTime() {
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("ampm").innerHTML = ampm;
 
+  // Update the time every second (recursion)
   setTimeout(showTime, 1000);
 }
