@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+}
+
+.container{
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.digital-clock{
+  padding: 2rem;
+  background-color: rgba(240, 248, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+  color: aliceblue;
+  font-size: 4rem;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+#day{
+  color: #c9f1ff;
+}
