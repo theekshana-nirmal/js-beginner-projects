@@ -2,6 +2,7 @@ const inputItem = document.getElementById("inputItem");
 const clearItems = document.getElementById("clearItems");
 const allItems = document.getElementById("allItems");
 
+// Event Listeners
 inputItem.addEventListener("keydown", function(event){
   if(event.key == "Enter"){
     addItem();
@@ -12,6 +13,8 @@ clearItems.addEventListener("click", function(){
   allItems.innerHTML = "";
 });
 
+
+// Function to add item
 function addItem(){
   var h2 = document.createElement("h2");
   h2.innerHTML = "- " + inputItem.value;
