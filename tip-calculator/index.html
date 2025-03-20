@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="tip-calculator">
+        <h2>Tip Calculator</h2>
+        <p style="border-bottom: 2px solid black"></p>
+
+        <label for="amount">Bill Amount</label>
+        <br>
+        <button class="icon"><i class="fa fa-usd" aria-hidden="true"></i></button>
+        <input type="number" id="amount" placeholder="Enter bill amount" />
+
+        <br />
+        <br />
+        
+        <label for="guest">Number of Guests</label>
+        <br>
+        <button class="icon"><i class="fa fa-male" aria-hidden="true"></i></button>
+        <input type="number" id="guest" placeholder="Enter number of guests" />
+
+        <br />
+        <br />
+
+        <label for="quality">Service Quality</label>
+        <br>
+
+        <select id="quality">
+          <option disabled selected value="0">Select an option</option>
+          <option value="0.3">30% - Outstanding</option>
+          <option value="0.2">20% - Good</option>
+          <option value="0.15">15% - Average</option>
+          <option value="0.1">10% - Poor</option>
+          <option value="0.05">5% - Terrible</option>
+        </select>
+
+        <div style="text-align: center;">
+          <p style="border-bottom: 2px solid black"></p>
+          <button id="calculate">Calculate</button>
+        </div>
+      </div>
+      <div id="tip-amount"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
