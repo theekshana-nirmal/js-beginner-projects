@@ -51,7 +51,7 @@ header button:hover {
 }
 
 .create-box {
-  /* display: none; */
+  display: none;
   width: 380px;
 
   margin-top: 20px auto;
