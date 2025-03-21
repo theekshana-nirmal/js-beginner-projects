@@ -1,3 +1,7 @@
+//TODO: Save flashcards to local storage
+//TODO: Load flashcards from local storage
+//TODO: Only show answer when clicked on the flashcard
+
 const create_box = document.getElementsByClassName("create-box")[0];
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
