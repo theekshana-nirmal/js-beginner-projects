@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flash Cards App</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="nav">
+          <h1>💡 Flash Cards</h1>
+          <div>
+            <button onclick="showCreate()">Show</button>
+            <button onclick="delFlashcards()">Clear Cards</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Flash Cards Container -->
+    <div class="container container-center">
+      <div class="create-box">
+        <h2>Create Flash Cards</h2>
+        <label for="question">Question</label>
+        <textarea id="question"></textarea>
+
+        <label for="answer">Answer</label>
+        <textarea id="answer"></textarea>
+
+        <div>
+          <button onclick="addFlashcard()">Create</button>
+          <button onclick="hideCreateBox()">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flash Cards Container -->
+    <div class="flashcards">
+      <!-- <div class="flashcard">
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+      </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
