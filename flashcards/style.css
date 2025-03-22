@@ -115,10 +115,11 @@ header button:hover {
   color: #333;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
-
+  word-wrap: break-word;
 }
 
 .flashcard p {
+  display: none;
   margin-bottom: 10px;
 }
 
