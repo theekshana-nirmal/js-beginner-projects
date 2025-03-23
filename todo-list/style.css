@@ -1,0 +1,135 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.nav h2{
+    margin: 0;
+}
+
+.user-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-input input{
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.user-input button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7300;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.user-input button:hover{
+    background-color: #ff9c33;
+}
+
+/* <div class="container">
+      <div class="todo-items">
+        <div class="task">
+          <p id="task-name">Task 1</p>
+          <div class="actions">
+            <input type="checkbox" id="checkbox" onclick="toggleTask()" />
+            <button id="delete" onclick="deleteTask()">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> */
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    animation: slideIn 0.25s ease;
+}
+
+.task p{
+    margin: 0;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+}
+
+.actions button{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff7300;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover{
+    background-color: #ff9c33;
+}
+
+.actions button i{
+    font-size: 16px;
+}
+
+.actions input[type="checkbox"]{
+    margin-right: 1rem;
+    scale: 1.5;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+}
