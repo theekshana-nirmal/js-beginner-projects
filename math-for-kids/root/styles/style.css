@@ -1,0 +1,182 @@
+/* 
+This is the HTML file for the math for kids game. It includes a header with navigation links, an audio element for sound effects, and a wrapper that contains the equation and answer options. The equation is displayed with different colors for each number and the equal sign. The answer options are also displayed with different colors. The JavaScript file for the addition game is linked at the end of the body.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Math for Kids</title>
+  </head>
+  <body>
+    <audio>
+      <source src="./audio/wrong.mp3" />
+    </audio>
+
+    <header>
+      <div class="container">
+        <h1>MATH 4 KIDS</h1>
+        <ul>
+          <li class="current"><a href="./index.html">Add</a></li>
+          <li><a href="./subtract.html">Subtract</a></li>
+          <li><a href="./multiply.html">Multiply</a></li>
+          <li><a href="./divide.html">Divide</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="equation">
+        <h1 id="num1" style="color: #fe4a49">1</h1>
+        <h1 style="color: #2ab7ca">+</h1>
+        <h1 id="num2" style="color: #fed766">1</h1>
+        <h1 style="color: #fe4a49">=</h1>
+        <h1 style="color: gray">?</h1>
+      </div>
+      <div class="answer-options">
+        <h1 id="option1">1</h1>
+        <h1 id="option2">2</h1>
+        <h1 id="option3">3</h1>
+      </div>
+    </div>
+    <script src="./scripts/add.js"></script>
+  </body>
+</html>
+
+
+*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-family: 'Luckiest Guy', sans-serif;
+  height: 100vh;
+}
+
+header {
+  background-color: #fe4a49;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 10px 1px rgba(128, 128, 128, 0.5);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+header ul {
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header ul li.current a {
+  text-decoration: underline;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.equation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
+
+.equation h1 {
+  margin: 0 2rem;
+}
+
+.answer-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 5rem;
+  height: fit-content;
+  height: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.answer-options h1 {
+  margin: 0;
+  cursor: pointer;
+}
+
+#option1,
+#option2,
+#option3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s ease;
+}
+
+#option1 {
+  background-color: #fe4a49;
+  color: white;
+}
+
+#option2 {
+  background-color: #2ab7ca;
+  color: white;
+}
+
+#option3 {
+  background-color: #fed766;
+  color: white;
+}
+
+#option1:hover {
+  background-color: #fff;
+  color: #fe4a49;
+}
+
+#option2:hover {
+  background-color: #fff;
+  color: #2ab7ca;
+}
+
+#option3:hover {
+  background-color: #fff;
+  color: #fed766;
+}
